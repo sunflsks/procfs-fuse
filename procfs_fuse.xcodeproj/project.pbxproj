@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351125FF276E8C6F002E30B8 /* PFFileObjectMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 351125FE276E8C6F002E30B8 /* PFFileObjectMatcher.m */; };
+		35112603276EABD9002E30B8 /* PFDisplayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35112602276EABD9002E30B8 /* PFDisplayHandler.m */; };
+		352E4EAA276EF6B50033D2C5 /* PFDisplayDirHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E4EA9276EF6B50033D2C5 /* PFDisplayDirHandler.m */; };
+		352E4EB0276FB5320033D2C5 /* PFDisplayPropertiesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E4EAF276FB5320033D2C5 /* PFDisplayPropertiesHandler.m */; };
+		353F467F277187BD007DA2EB /* PFSysHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F467E277187BD007DA2EB /* PFSysHandler.m */; };
+		353F4683277198C7007DA2EB /* PFDisplayContentesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F4682277198C7007DA2EB /* PFDisplayContentesHandler.m */; };
+		3547F624276C28710074F1D0 /* libfuse.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3547F623276C28710074F1D0 /* libfuse.2.dylib */; };
+		3547F629276C28D90074F1D0 /* ops.m in Sources */ = {isa = PBXBuildFile; fileRef = 3547F627276C28D90074F1D0 /* ops.m */; };
+		3547F62D276D7D8C0074F1D0 /* BackendProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 3547F62C276D7D8C0074F1D0 /* BackendProtocols.h */; };
+		3547F633276D9F7D0074F1D0 /* PFRootHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3547F632276D9F7D0074F1D0 /* PFRootHandler.m */; };
+		3547F635276D9FE40074F1D0 /* GenericHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3547F634276D9FE40074F1D0 /* GenericHandlers.m */; };
+		3547F639276DB0100074F1D0 /* DirectoryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3547F638276DB00F0074F1D0 /* DirectoryEntry.m */; };
 		35F4FAD4276C27FA005E28AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4FAD3276C27FA005E28AD /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +35,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		351125FD276E8470002E30B8 /* PFFileObjectMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFFileObjectMatcher.h; sourceTree = "<group>"; };
+		351125FE276E8C6F002E30B8 /* PFFileObjectMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFFileObjectMatcher.m; sourceTree = "<group>"; };
+		35112600276EAB6D002E30B8 /* Handlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handlers.h; sourceTree = "<group>"; };
+		35112601276EAB87002E30B8 /* PFDisplayHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFDisplayHandler.h; sourceTree = "<group>"; };
+		35112602276EABD9002E30B8 /* PFDisplayHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDisplayHandler.m; sourceTree = "<group>"; };
+		352E4EA8276EF62E0033D2C5 /* PFDisplayDirHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFDisplayDirHandler.h; sourceTree = "<group>"; };
+		352E4EA9276EF6B50033D2C5 /* PFDisplayDirHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDisplayDirHandler.m; sourceTree = "<group>"; };
+		352E4EAB276FB4C40033D2C5 /* PFDisplayPropertiesHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFDisplayPropertiesHandler.h; sourceTree = "<group>"; };
+		352E4EAF276FB5320033D2C5 /* PFDisplayPropertiesHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDisplayPropertiesHandler.m; sourceTree = "<group>"; };
+		353F467E277187BD007DA2EB /* PFSysHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFSysHandler.m; sourceTree = "<group>"; };
+		353F468027718841007DA2EB /* PFSysHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFSysHandler.h; sourceTree = "<group>"; };
+		353F468127719896007DA2EB /* PFDisplayContentsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFDisplayContentsHandler.h; sourceTree = "<group>"; };
+		353F4682277198C7007DA2EB /* PFDisplayContentesHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDisplayContentesHandler.m; sourceTree = "<group>"; };
+		3547F623276C28710074F1D0 /* libfuse.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfuse.2.dylib; path = ../../../../../../usr/local/lib/libfuse.2.dylib; sourceTree = "<group>"; };
+		3547F627276C28D90074F1D0 /* ops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ops.m; sourceTree = "<group>"; };
+		3547F628276C28D90074F1D0 /* procfs_fuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = procfs_fuse.h; sourceTree = "<group>"; };
+		3547F62A276C3B3D0074F1D0 /* ops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ops.h; sourceTree = "<group>"; };
+		3547F62C276D7D8C0074F1D0 /* BackendProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackendProtocols.h; sourceTree = "<group>"; };
+		3547F62E276D84080074F1D0 /* DirectoryEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectoryEntry.h; sourceTree = "<group>"; };
+		3547F632276D9F7D0074F1D0 /* PFRootHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFRootHandler.m; sourceTree = "<group>"; };
+		3547F634276D9FE40074F1D0 /* GenericHandlers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenericHandlers.m; sourceTree = "<group>"; };
+		3547F636276DA3140074F1D0 /* GenericHandlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericHandlers.h; sourceTree = "<group>"; };
+		3547F637276DA35A0074F1D0 /* PFRootHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFRootHandler.h; sourceTree = "<group>"; };
+		3547F638276DB00F0074F1D0 /* DirectoryEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectoryEntry.m; sourceTree = "<group>"; };
 		35F4FAD0276C27FA005E28AD /* procfs_fuse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = procfs_fuse; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F4FAD3276C27FA005E28AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +68,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3547F624276C28710074F1D0 /* libfuse.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352E4EAC276FB4E30033D2C5 /* display */ = {
+			isa = PBXGroup;
+			children = (
+				352E4EAB276FB4C40033D2C5 /* PFDisplayPropertiesHandler.h */,
+				352E4EAF276FB5320033D2C5 /* PFDisplayPropertiesHandler.m */,
+				353F468127719896007DA2EB /* PFDisplayContentsHandler.h */,
+				353F4682277198C7007DA2EB /* PFDisplayContentesHandler.m */,
+			);
+			path = display;
+			sourceTree = "<group>";
+		};
+		353F467D2771879B007DA2EB /* sys */ = {
+			isa = PBXGroup;
+			children = (
+				3547F631276D9F5E0074F1D0 /* displays */,
+				353F467E277187BD007DA2EB /* PFSysHandler.m */,
+				353F468027718841007DA2EB /* PFSysHandler.h */,
+			);
+			path = sys;
+			sourceTree = "<group>";
+		};
+		3547F622276C28710074F1D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3547F623276C28710074F1D0 /* libfuse.2.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3547F630276D9F580074F1D0 /* handlers */ = {
+			isa = PBXGroup;
+			children = (
+				353F467D2771879B007DA2EB /* sys */,
+				3547F634276D9FE40074F1D0 /* GenericHandlers.m */,
+				3547F636276DA3140074F1D0 /* GenericHandlers.h */,
+				3547F637276DA35A0074F1D0 /* PFRootHandler.h */,
+				3547F632276D9F7D0074F1D0 /* PFRootHandler.m */,
+				35112600276EAB6D002E30B8 /* Handlers.h */,
+			);
+			path = handlers;
+			sourceTree = "<group>";
+		};
+		3547F631276D9F5E0074F1D0 /* displays */ = {
+			isa = PBXGroup;
+			children = (
+				352E4EAC276FB4E30033D2C5 /* display */,
+				35112602276EABD9002E30B8 /* PFDisplayHandler.m */,
+				35112601276EAB87002E30B8 /* PFDisplayHandler.h */,
+				352E4EA9276EF6B50033D2C5 /* PFDisplayDirHandler.m */,
+				352E4EA8276EF62E0033D2C5 /* PFDisplayDirHandler.h */,
+			);
+			path = displays;
+			sourceTree = "<group>";
+		};
 		35F4FAC7276C27F9005E28AD = {
 			isa = PBXGroup;
 			children = (
 				35F4FAD2276C27FA005E28AD /* procfs_fuse */,
 				35F4FAD1276C27FA005E28AD /* Products */,
+				3547F622276C28710074F1D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,18 +149,39 @@
 		35F4FAD2276C27FA005E28AD /* procfs_fuse */ = {
 			isa = PBXGroup;
 			children = (
+				3547F628276C28D90074F1D0 /* procfs_fuse.h */,
+				3547F62C276D7D8C0074F1D0 /* BackendProtocols.h */,
 				35F4FAD3276C27FA005E28AD /* main.m */,
+				3547F630276D9F580074F1D0 /* handlers */,
+				3547F627276C28D90074F1D0 /* ops.m */,
+				3547F62A276C3B3D0074F1D0 /* ops.h */,
+				3547F638276DB00F0074F1D0 /* DirectoryEntry.m */,
+				3547F62E276D84080074F1D0 /* DirectoryEntry.h */,
+				351125FE276E8C6F002E30B8 /* PFFileObjectMatcher.m */,
+				351125FD276E8470002E30B8 /* PFFileObjectMatcher.h */,
 			);
 			path = procfs_fuse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3547F62B276D67570074F1D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3547F62D276D7D8C0074F1D0 /* BackendProtocols.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		35F4FACF276C27F9005E28AD /* procfs_fuse */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35F4FAD7276C27FA005E28AD /* Build configuration list for PBXNativeTarget "procfs_fuse" */;
 			buildPhases = (
+				3547F62B276D67570074F1D0 /* Headers */,
 				35F4FACC276C27F9005E28AD /* Sources */,
 				35F4FACD276C27F9005E28AD /* Frameworks */,
 				35F4FACE276C27F9005E28AD /* CopyFiles */,
@@ -119,7 +232,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3547F629276C28D90074F1D0 /* ops.m in Sources */,
+				352E4EAA276EF6B50033D2C5 /* PFDisplayDirHandler.m in Sources */,
+				3547F633276D9F7D0074F1D0 /* PFRootHandler.m in Sources */,
+				3547F635276D9FE40074F1D0 /* GenericHandlers.m in Sources */,
+				351125FF276E8C6F002E30B8 /* PFFileObjectMatcher.m in Sources */,
+				352E4EB0276FB5320033D2C5 /* PFDisplayPropertiesHandler.m in Sources */,
+				353F467F277187BD007DA2EB /* PFSysHandler.m in Sources */,
+				3547F639276DB0100074F1D0 /* DirectoryEntry.m in Sources */,
+				35112603276EABD9002E30B8 /* PFDisplayHandler.m in Sources */,
 				35F4FAD4276C27FA005E28AD /* main.m in Sources */,
+				353F4683277198C7007DA2EB /* PFDisplayContentesHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +363,13 @@
 		35F4FAD8276C27FA005E28AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWDSSU4PFA;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "/usr/local/lib/**";
+				OTHER_CFLAGS = "-D_FILE_OFFSET_BITS=64";
+				"OTHER_CFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,7 +377,12 @@
 		35F4FAD9276C27FA005E28AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWDSSU4PFA;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = "/usr/local/lib/**";
+				OTHER_CFLAGS = "D_FILE_OFFSET_BITS=64";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
