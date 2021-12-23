@@ -12,7 +12,7 @@
 		352E4EAA276EF6B50033D2C5 /* PFDisplayDirHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E4EA9276EF6B50033D2C5 /* PFDisplayDirHandler.m */; };
 		352E4EB0276FB5320033D2C5 /* PFDisplayPropertiesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 352E4EAF276FB5320033D2C5 /* PFDisplayPropertiesHandler.m */; };
 		353F467F277187BD007DA2EB /* PFSysHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F467E277187BD007DA2EB /* PFSysHandler.m */; };
-		353F4683277198C7007DA2EB /* PFDisplayContentesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F4682277198C7007DA2EB /* PFDisplayContentesHandler.m */; };
+		353F4683277198C7007DA2EB /* PFDisplayContentsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F4682277198C7007DA2EB /* PFDisplayContentsHandler.m */; };
 		3547F624276C28710074F1D0 /* libfuse.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3547F623276C28710074F1D0 /* libfuse.2.dylib */; };
 		3547F629276C28D90074F1D0 /* ops.m in Sources */ = {isa = PBXBuildFile; fileRef = 3547F627276C28D90074F1D0 /* ops.m */; };
 		3547F62D276D7D8C0074F1D0 /* BackendProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 3547F62C276D7D8C0074F1D0 /* BackendProtocols.h */; };
@@ -47,7 +47,7 @@
 		353F467E277187BD007DA2EB /* PFSysHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFSysHandler.m; sourceTree = "<group>"; };
 		353F468027718841007DA2EB /* PFSysHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFSysHandler.h; sourceTree = "<group>"; };
 		353F468127719896007DA2EB /* PFDisplayContentsHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFDisplayContentsHandler.h; sourceTree = "<group>"; };
-		353F4682277198C7007DA2EB /* PFDisplayContentesHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDisplayContentesHandler.m; sourceTree = "<group>"; };
+		353F4682277198C7007DA2EB /* PFDisplayContentsHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDisplayContentsHandler.m; sourceTree = "<group>"; };
 		3547F623276C28710074F1D0 /* libfuse.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfuse.2.dylib; path = ../../../../../../usr/local/lib/libfuse.2.dylib; sourceTree = "<group>"; };
 		3547F627276C28D90074F1D0 /* ops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ops.m; sourceTree = "<group>"; };
 		3547F628276C28D90074F1D0 /* procfs_fuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = procfs_fuse.h; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				352E4EAB276FB4C40033D2C5 /* PFDisplayPropertiesHandler.h */,
 				352E4EAF276FB5320033D2C5 /* PFDisplayPropertiesHandler.m */,
 				353F468127719896007DA2EB /* PFDisplayContentsHandler.h */,
-				353F4682277198C7007DA2EB /* PFDisplayContentesHandler.m */,
+				353F4682277198C7007DA2EB /* PFDisplayContentsHandler.m */,
 			);
 			path = display;
 			sourceTree = "<group>";
@@ -242,7 +242,7 @@
 				3547F639276DB0100074F1D0 /* DirectoryEntry.m in Sources */,
 				35112603276EABD9002E30B8 /* PFDisplayHandler.m in Sources */,
 				35F4FAD4276C27FA005E28AD /* main.m in Sources */,
-				353F4683277198C7007DA2EB /* PFDisplayContentesHandler.m in Sources */,
+				353F4683277198C7007DA2EB /* PFDisplayContentsHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
