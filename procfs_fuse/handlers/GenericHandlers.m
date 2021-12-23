@@ -47,7 +47,7 @@
     st.st_mode = S_IFREG | S_IRUSR | S_IRGRP | S_IROTH;
     st.st_uid = getuid();
     st.st_gid = getgid();
-    st.st_size = 10;
+    st.st_nlink = 1;
     
     return st;
 }
