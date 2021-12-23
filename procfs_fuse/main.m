@@ -16,7 +16,7 @@ struct fuse_operations procfs_ops = {
     // file access
 	.open = pf_open,
 	.read = pf_read,
-    .read_buf = pf_readbuf,
+    .read_buf = NULL, // pf_readbuf,
     
     // dir access
     .opendir = pf_opendir,
@@ -33,9 +33,8 @@ struct fuse_operations procfs_ops = {
     .statfs = pf_statfs,
 	.init = pf_init,
 	.destroy = pf_destroy,
-
-	// this filesystem is read only, fuck all this
-	// modifying shit
+    
+    // unecessary stuff
 	.getdir = NULL,
 	.mknod = NULL,
 	.mkdir = NULL,
@@ -68,12 +67,12 @@ int main(int argc, char** argv) {
         request_access();
     }
     
-    char* new_args[argc + 2];
+    char* new_args[argc + 3];
     for (int i = 0; i <= argc; i++) {
         new_args[i] = argv[i];
     }
     
-    new_args[argc + 0] = "-ofsname=procfs_fuse";
+    new_args[argc] = "-ofsname=procfs_fuse,direct_io";
     
     return fuse_main(argc + 1, new_args, &procfs_ops, NULL);
 }
