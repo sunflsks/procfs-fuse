@@ -95,10 +95,4 @@ static inline bool pf_CGIsValidDisplay(CGDirectDisplayID displayId) {
     return [self copyDataFromBuffer:data toDestinationBuffer:destbuf destinationBufferSize:bufsize offset:offset];
 }
 
--(struct stat)getattr {
-    struct stat st = [super getattr];
-    st.st_size = data.length;
-    return st;
-}
-
 @end
