@@ -54,7 +54,7 @@ int pf_read(const char* path, char* dest_buf, size_t bufsz, off_t offset, struct
 }
 
 int pf_statfs(const char* path, struct statvfs* statvfs_out) {
-    statvfs_out->f_bsize = 0;
+    statvfs_out->f_bsize = 4096;
     statvfs_out->f_frsize = 0;
     statvfs_out->f_blocks = 0;
     statvfs_out->f_bfree = 0;
@@ -116,7 +116,7 @@ int pf_releasedir(const char* path, struct fuse_file_info* fi) {
 }
 
 int pf_access(const char* path, int somethign) {
-    return -ENOTSUP;
+    return 0;
 }
 
 int pf_readbuf(const char* path, struct fuse_bufvec** bufp, size_t size, off_t off, struct fuse_file_info* fi) {
