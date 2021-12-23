@@ -40,34 +40,36 @@ static inline bool pf_CGIsValidDisplay(CGDirectDisplayID displayId) {
 }
 
 @implementation PFDisplayContentsHandler {
-    NSData* data;
+    NSData* _data;
+    CGDirectDisplayID _displayId;
+}
+
+-(void)initializeData {
+    CGImageRef ref = CGDisplayCreateImage(_displayId);
+    
+    NSBitmapImageRep* rep = [[NSBitmapImageRep alloc] initWithCGImage:ref];
+    _data = [rep representationUsingType:NSBitmapImageFileTypeTIFF properties:@{}];
+    
+    CGImageRelease(ref);
 }
 
 -(id)initWithDisplayID:(CGDirectDisplayID)displayId {
     self = [super init];
     
+    _displayId = displayId;
     if (!pf_CGIsValidDisplay(displayId)) {
         return nil;
     }
-    
-    CGImageRef ref = CGDisplayCreateImage(displayId);
-    
-    NSBitmapImageRep* rep = [[NSBitmapImageRep alloc] initWithCGImage:ref];
-    data = [rep representationUsingType:NSBitmapImageFileTypePNG properties:@{}];
-    
-    CGImageRelease(ref);
     
     return self;
 }
 
 -(int)read:(size_t)bufsize destbuf:(char*)destbuf offset:(off_t)offset {
-    return [self copyDataFromBuffer:data toDestinationBuffer:destbuf destinationBufferSize:bufsize offset:offset];
-}
-
--(struct stat)getattr {
-    struct stat st = [super getattr];
-    st.st_size = data.length;
-    return st;
+    if (!_data) {
+        [self initializeData];
+    }
+    
+    return [self copyDataFromBuffer:_data toDestinationBuffer:destbuf destinationBufferSize:bufsize offset:offset];
 }
 
 @end
