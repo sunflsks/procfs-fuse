@@ -68,5 +68,12 @@ int main(int argc, char** argv) {
         request_access();
     }
     
-    return fuse_main(argc, argv, &procfs_ops, NULL);
+    char* new_args[argc + 2];
+    for (int i = 0; i <= argc; i++) {
+        new_args[i] = argv[i];
+    }
+    
+    new_args[argc + 0] = "-ofsname=procfs_fuse";
+    
+    return fuse_main(argc + 1, new_args, &procfs_ops, NULL);
 }
