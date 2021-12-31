@@ -20,6 +20,8 @@
 		3547F635276D9FE40074F1D0 /* GenericHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3547F634276D9FE40074F1D0 /* GenericHandlers.m */; };
 		3547F639276DB0100074F1D0 /* DirectoryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3547F638276DB00F0074F1D0 /* DirectoryEntry.m */; };
 		35F4FAD4276C27FA005E28AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4FAD3276C27FA005E28AD /* main.m */; };
+		35FA6621277D04B500324F35 /* PFCursorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA6620277D04B500324F35 /* PFCursorHandler.m */; };
+		35FA6626277D3EB700324F35 /* PFCursorPositionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA6625277D3EB700324F35 /* PFCursorPositionHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +63,10 @@
 		3547F638276DB00F0074F1D0 /* DirectoryEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectoryEntry.m; sourceTree = "<group>"; };
 		35F4FAD0276C27FA005E28AD /* procfs_fuse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = procfs_fuse; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F4FAD3276C27FA005E28AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35FA6620277D04B500324F35 /* PFCursorHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFCursorHandler.m; sourceTree = "<group>"; };
+		35FA6622277D04BD00324F35 /* PFCursorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFCursorHandler.h; sourceTree = "<group>"; };
+		35FA6624277D3D6F00324F35 /* PFCursorPositionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFCursorPositionHandler.h; sourceTree = "<group>"; };
+		35FA6625277D3EB700324F35 /* PFCursorPositionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFCursorPositionHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +84,12 @@
 		352E4EAC276FB4E30033D2C5 /* display */ = {
 			isa = PBXGroup;
 			children = (
-				352E4EAB276FB4C40033D2C5 /* PFDisplayPropertiesHandler.h */,
+				352E4EA9276EF6B50033D2C5 /* PFDisplayDirHandler.m */,
+				352E4EA8276EF62E0033D2C5 /* PFDisplayDirHandler.h */,
 				352E4EAF276FB5320033D2C5 /* PFDisplayPropertiesHandler.m */,
-				353F468127719896007DA2EB /* PFDisplayContentsHandler.h */,
+				352E4EAB276FB4C40033D2C5 /* PFDisplayPropertiesHandler.h */,
 				353F4682277198C7007DA2EB /* PFDisplayContentsHandler.m */,
+				353F468127719896007DA2EB /* PFDisplayContentsHandler.h */,
 			);
 			path = display;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 		353F467D2771879B007DA2EB /* sys */ = {
 			isa = PBXGroup;
 			children = (
+				35FA661F277D049600324F35 /* cursor */,
 				3547F631276D9F5E0074F1D0 /* displays */,
 				353F467E277187BD007DA2EB /* PFSysHandler.m */,
 				353F468027718841007DA2EB /* PFSysHandler.h */,
@@ -123,8 +132,6 @@
 				352E4EAC276FB4E30033D2C5 /* display */,
 				35112602276EABD9002E30B8 /* PFDisplayHandler.m */,
 				35112601276EAB87002E30B8 /* PFDisplayHandler.h */,
-				352E4EA9276EF6B50033D2C5 /* PFDisplayDirHandler.m */,
-				352E4EA8276EF62E0033D2C5 /* PFDisplayDirHandler.h */,
 			);
 			path = displays;
 			sourceTree = "<group>";
@@ -161,6 +168,17 @@
 				351125FD276E8470002E30B8 /* PFFileObjectMatcher.h */,
 			);
 			path = procfs_fuse;
+			sourceTree = "<group>";
+		};
+		35FA661F277D049600324F35 /* cursor */ = {
+			isa = PBXGroup;
+			children = (
+				35FA6620277D04B500324F35 /* PFCursorHandler.m */,
+				35FA6622277D04BD00324F35 /* PFCursorHandler.h */,
+				35FA6625277D3EB700324F35 /* PFCursorPositionHandler.m */,
+				35FA6624277D3D6F00324F35 /* PFCursorPositionHandler.h */,
+			);
+			path = cursor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3547F629276C28D90074F1D0 /* ops.m in Sources */,
+				35FA6626277D3EB700324F35 /* PFCursorPositionHandler.m in Sources */,
 				352E4EAA276EF6B50033D2C5 /* PFDisplayDirHandler.m in Sources */,
+				35FA6621277D04B500324F35 /* PFCursorHandler.m in Sources */,
 				3547F633276D9F7D0074F1D0 /* PFRootHandler.m in Sources */,
 				3547F635276D9FE40074F1D0 /* GenericHandlers.m in Sources */,
 				351125FF276E8C6F002E30B8 /* PFFileObjectMatcher.m in Sources */,
