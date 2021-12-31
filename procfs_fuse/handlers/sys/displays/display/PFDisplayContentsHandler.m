@@ -5,8 +5,6 @@
 //  Created by Sudhip Nashi on 12/20/21.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
 #import "PFDisplayContentsHandler.h"
 #import "../../../GenericHandlers.h"
 
