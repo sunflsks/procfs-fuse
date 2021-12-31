@@ -1,7 +1,8 @@
-#include <CoreGraphics/CoreGraphics.h>
-#include <Foundation/Foundation.h>
 #include "procfs_fuse.h"
 #include "ops.h"
+
+@import Foundation;
+@import CoreGraphics;
 
 // request access to restricted APIs
 void request_access(void) {
