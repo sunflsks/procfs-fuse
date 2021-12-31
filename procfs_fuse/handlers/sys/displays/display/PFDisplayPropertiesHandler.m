@@ -5,11 +5,12 @@
 //  Created by Sudhip Nashi on 12/19/21.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
 #import <AppKit/AppKit.h>
 #import "PFDisplayPropertiesHandler.h"
 #import "../../../GenericHandlers.h"
+
+@import Foundation;
+@import CoreGraphics;
 
 static inline NSString* pf_boolToString(boolean_t boolean) {
     return (boolean ? @"true" : @"false");

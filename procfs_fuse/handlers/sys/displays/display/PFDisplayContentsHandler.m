@@ -9,9 +9,12 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import "PFDisplayContentsHandler.h"
 #import "../../../GenericHandlers.h"
-#import <AppKit/AppKit.h>
 
-static inline bool pf_CGIsValidDisplay(CGDirectDisplayID displayId) {
+@import Foundation;
+@import CoreGraphics;
+@import AppKit;
+
+bool pf_CGIsValidDisplay(CGDirectDisplayID displayId) {
     uint32_t arraySize;
     
     CGError error = CGGetActiveDisplayList(0, NULL, &arraySize);

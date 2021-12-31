@@ -5,11 +5,14 @@
 //  Created by Sudhip Nashi on 12/18/21.
 //
 
-#import <Foundation/Foundation.h>
 #import "GenericHandlers.h"
 #import "PFDisplayDirHandler.h"
-#import "display/PFDisplayContentsHandler.h"
-#import "display/PFDisplayPropertiesHandler.h"
+#import "PFDisplayContentsHandler.h"
+#import "PFDisplayPropertiesHandler.h"
+
+@import Foundation;
+
+bool pf_CGIsValidDisplay(CGDirectDisplayID displayId);
 
 @implementation PFDisplayDirHandler {
     int displayid;
@@ -17,6 +20,10 @@
 
 -(id)initWithDisplayId:(int)displayid {
     self = [super init];
+    if (!pf_CGIsValidDisplay(displayid)) {
+        return nil;
+    }
+
     self->displayid = displayid;
     return self;
 }

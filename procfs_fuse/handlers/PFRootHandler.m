@@ -5,12 +5,13 @@
 //  Created by Sudhip Nashi on 12/17/21.
 //
 
-#import <Foundation/Foundation.h>
 #import "../procfs_fuse.h"
 #import "../BackendProtocols.h"
 #import "GenericHandlers.h"
 #import "sys/PFSysHandler.h"
 #import "PFRootHandler.h"
+
+@import Foundation;
 
 @implementation PFRootHandler
 

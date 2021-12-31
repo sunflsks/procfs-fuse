@@ -5,21 +5,13 @@
 //  Created by Sudhip Nashi on 12/18/21.
 //
 
-#import <Foundation/Foundation.h>
-
-//
-//  GenericHandlers.m
-//  procfs_fuse
-//
-//  Created by Sudhip Nashi on 12/17/21.
-//
-
-#import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
 #import "BackendProtocols.h"
 #import "GenericHandlers.h"
 #import "PFDisplayHandler.h"
-#import "PFDisplayDirHandler.h"
+#import "display/PFDisplayDirHandler.h"
+
+@import Foundation;
+@import CoreGraphics;
 
 #define MAX_DISPLAY_CNT 128
 
