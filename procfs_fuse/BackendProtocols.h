@@ -24,7 +24,7 @@ struct pf_access_output {
 
 @protocol PFBackendRepresentation <NSObject>
 // getattr() call: fill out st with the attributes of the pseudo-file
-+(struct stat)getattr;
+-(struct stat)getattr;
 
 // access() call: return YES or NO if the file can be accessed (mask [like F_OK, W_OK] is in `mask` var)
 +(struct pf_access_output)access:(int)mode;
