@@ -14,7 +14,11 @@
     NSString* name;
 }
 
--(id)initWithName:(NSString *)name stat:(struct stat)stat {
++(instancetype)directoryEntryWithName:(NSString*)name stat:(struct stat)stat {
+    return [[self alloc] initWithName:name stat:stat];
+}
+
+-(instancetype)initWithName:(NSString *)name stat:(struct stat)stat {
     self = [super init];
     self->st = stat;
     self->name = name;

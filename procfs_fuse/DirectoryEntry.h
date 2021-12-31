@@ -12,6 +12,7 @@
 @property(nonatomic, readonly) struct stat stat;
 @property(nonatomic, readonly) NSString* name;
 -(id)initWithName:(NSString*)name stat:(struct stat)stat;
++(instancetype)directoryEntryWithName:(NSString*)name stat:(struct stat)stat;
 @end
 
 #endif /* DirectoryEntries_h */
