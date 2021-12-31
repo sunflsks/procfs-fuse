@@ -11,8 +11,10 @@
 #import "PFRootHandler.h"
 #import "sys/PFSysHandler.h"
 #import "sys/displays/PFDisplayHandler.h"
-#import "sys/displays/PFDisplayDirHandler.h"
+#import "sys/displays/display/PFDisplayDirHandler.h"
 #import "sys/displays/display/PFDisplayPropertiesHandler.h"
 #import "sys/displays/display/PFDisplayContentsHandler.h"
+#import "sys/cursor/PFCursorHandler.h"
+#import "sys/cursor/PFCursorPositionHandler.h"
 
 #endif /* Handlers_h */
