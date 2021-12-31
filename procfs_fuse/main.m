@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
         new_args[i] = argv[i];
     }
     
-    new_args[argc] = "-ofsname=procfs_fuse,direct_io";
+    new_args[argc] = "-ofsname=procfs_fuse,direct_io,volname=Proc Filesystem";
     
     return fuse_main(argc + 1, new_args, &procfs_ops, NULL);
 }
