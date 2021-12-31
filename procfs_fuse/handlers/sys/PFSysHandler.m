@@ -7,14 +7,16 @@
 
 #import <Foundation/Foundation.h>
 #import "../GenericHandlers.h"
-#import "displays/PFDisplayDirHandler.h"
+#import "cursor/PFCursorHandler.h"
+#import "displays/PFDisplayHandler.h"
 #import "PFSysHandler.h"
 
 @implementation PFSysHandler
 
 -(NSArray<PFDirectoryEntry*>*)getDirectoryEntries {
     return @[
-        [[PFDirectoryEntry alloc] initWithName:@"displays" stat:[[[PFDisplayDirHandler alloc] init] getattr]]
+        [[PFDirectoryEntry alloc] initWithName:@"displays" stat:[[[PFDisplayHandler alloc] init] getattr]],
+        [[PFDirectoryEntry alloc] initWithName:@"cursor" stat:[[[PFCursorHandler alloc] init] getattr]],
     ];
 }
 

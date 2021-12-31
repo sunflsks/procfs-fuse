@@ -43,6 +43,23 @@
         return [self handleDisplayDirectory:pathToPass];
     }
     
+    if ([path hasPrefix:@"/cursor"]) {
+        NSString* pathToPass = [path substringFromIndex:@"/cursor".length];
+        return [self handleCursorDirectory:pathToPass];
+    }
+    
+    return nil;
+}
+
++(id<PFBackendRepresentation>)handleCursorDirectory:(NSString*)path {
+    if (path.length == 0) {
+        return [[PFCursorHandler alloc] init];
+    }
+    
+    if ([path isEqualToString:@"/position"]) {
+        return [[PFCursorPositionHandler alloc] init];
+    }
+    
     return nil;
 }
 
