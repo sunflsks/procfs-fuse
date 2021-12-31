@@ -5,9 +5,10 @@
 //  Created by Sudhip Nashi on 12/17/21.
 //
 
-#import <Foundation/Foundation.h>
 #import "../BackendProtocols.h"
 #import "GenericHandlers.h"
+
+@import Foundation;
 
 @implementation PFGenericPseudoDirectoryHandler
 
@@ -50,6 +51,10 @@
     st.st_nlink = 1;
     
     return st;
+}
+
++(struct stat)genericGetattr {
+    return [[[self alloc] init] getattr];
 }
 
 + (struct pf_access_output)access:(int)mode {
