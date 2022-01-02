@@ -27,6 +27,10 @@
         return [self handleSysDirectory:pathToPass];
     }
     
+    if ([path rangeOfString:@"\\/\\d*" options:NSRegularExpressionSearch].location != NSNotFound) {
+        return [[PFGenericPseudoDirectoryHandler alloc] init];
+    }
+    
     // if the object cannot be found in the tree above, return nil
     return nil;
 }
