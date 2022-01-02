@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "PFFileObjectMatcher.h"
 #import "BackendProtocols.h"
-#import "handlers/Handlers.h"
+#import "Handlers.h"
 
 @interface PFFileObjectMatcher (Private)
 +(id<PFBackendRepresentation>)handleSysDirectory:(NSString*)path;

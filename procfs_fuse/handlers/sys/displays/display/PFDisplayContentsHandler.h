@@ -8,7 +8,7 @@
 #ifndef DisplayContentsHandler_h
 #define DisplayContentsHandler_h
 
-#import "../../../GenericHandlers.h"
+#import "GenericHandlers.h"
 #import <CoreGraphics/CoreGraphics.h>
 
 @interface PFDisplayContentsHandler : PFGenericPseudoFileHandler

@@ -8,7 +8,7 @@
 #ifndef DisplayResHandler_h
 #define DisplayResHandler_h
 
-#import "../../../GenericHandlers.h"
+#import "GenericHandlers.h"
 #import <CoreGraphics/CoreGraphics.h>
 
 @interface PFDisplayPropertiesHandler : PFGenericPseudoFileHandler

@@ -6,7 +6,7 @@
 //
 
 #import "PFDisplayContentsHandler.h"
-#import "../../../GenericHandlers.h"
+#import "GenericHandlers.h"
 
 @import Foundation;
 @import CoreGraphics;

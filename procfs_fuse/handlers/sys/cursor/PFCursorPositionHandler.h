@@ -8,7 +8,7 @@
 #ifndef PFCursorPositionHandler_h
 #define PFCursorPositionHandler_h
 
-#import "../../GenericHandlers.h"
+#import "GenericHandlers.h"
 
 @interface PFCursorPositionHandler : PFGenericPseudoFileHandler
 @end

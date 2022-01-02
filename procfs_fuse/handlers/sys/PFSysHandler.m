@@ -5,7 +5,7 @@
 //  Created by Sudhip Nashi on 12/20/21.
 //
 
-#import "../GenericHandlers.h"
+#import "GenericHandlers.h"
 #import "cursor/PFCursorHandler.h"
 #import "displays/PFDisplayHandler.h"
 #import "PFSysHandler.h"

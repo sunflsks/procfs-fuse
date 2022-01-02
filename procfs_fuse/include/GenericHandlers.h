@@ -9,7 +9,7 @@
 #define GenericHandlers_h
 
 #import <Foundation/Foundation.h>
-#import "../DirectoryEntry.h"
+#import "DirectoryEntry.h"
 #import "../BackendProtocols.h"
 
 @interface PFGenericPseudoDirectoryHandler : NSObject <PFPseudoDirectory>

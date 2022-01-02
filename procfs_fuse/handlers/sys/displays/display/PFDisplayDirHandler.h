@@ -8,7 +8,7 @@
 #ifndef DisplayDirHandler_h
 #define DisplayDirHandler_h
 
-#import "../../../GenericHandlers.h"
+#import "GenericHandlers.h"
 
 @interface PFDisplayDirHandler : PFGenericPseudoDirectoryHandler
 -(id)initWithDisplayId:(int)displayid;

@@ -7,7 +7,7 @@
 
 #import <AppKit/AppKit.h>
 #import "PFDisplayPropertiesHandler.h"
-#import "../../../GenericHandlers.h"
+#import "GenericHandlers.h"
 
 @import Foundation;
 @import CoreGraphics;

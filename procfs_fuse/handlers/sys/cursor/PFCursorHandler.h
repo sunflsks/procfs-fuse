@@ -8,7 +8,7 @@
 #ifndef PFCursorHandler_h
 #define PFCursorHandler_h
 
-#import "../../GenericHandlers.h"
+#import "GenericHandlers.h"
 
 @interface PFCursorHandler : PFGenericPseudoDirectoryHandler
 @end

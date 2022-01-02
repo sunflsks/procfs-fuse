@@ -8,7 +8,7 @@
 #ifndef SysHandler_h
 #define SysHandler_h
 
-#import "../GenericHandlers.h"
+#import "GenericHandlers.h"
 
 @interface PFSysHandler : PFGenericPseudoDirectoryHandler
 @end

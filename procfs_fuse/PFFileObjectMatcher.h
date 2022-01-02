@@ -8,7 +8,7 @@
 #ifndef FileObjectMatcher_h
 #define FileObjectMatcher_h
 
-#include "handlers/GenericHandlers.h"
+#include "GenericHandlers.h"
 #include "BackendProtocols.h"
 
 @interface PFFileObjectMatcher : NSObject
